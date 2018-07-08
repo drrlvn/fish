@@ -5,6 +5,6 @@ function prompt_virtualenv
         if test $venv_name = '.env'
             set venv_name $venv_parts[-2]
         end
-        echo -ns (set_color bryellow) 'Py(' (set_color brwhite) $venv_name (set_color bryellow) ') '
+        echo -ns (set_color -o yellow) 'Py(' (set_color -o white) $venv_name (set_color -o yellow) ') '
     end
 end
