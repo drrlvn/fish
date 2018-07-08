@@ -10,12 +10,6 @@ function fish_greeting
     end
 end
 
-set -x EDITOR 'emacsclient -c'
-if type -q nvim
-    set -x ALTERNATE_EDITOR 'nvim'
-else
-    set -x ALTERNATE_EDITOR 'vim'
-end
 set -x LESS '-R -n -X -m -i -S'
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
