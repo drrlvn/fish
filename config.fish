@@ -10,6 +10,8 @@ function fish_greeting
     end
 end
 
+set -g fish_term24bit 1
+
 set -x LESS '-R -n -X -m -i -S'
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
