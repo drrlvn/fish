@@ -8,6 +8,10 @@ function fish_greeting
             end
         end
     end
+
+    if type -q custom_fish_greeting
+        custom_fish_greeting
+    end
 end
 
 set -g fish_term24bit 1
