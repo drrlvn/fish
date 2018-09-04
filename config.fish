@@ -20,7 +20,7 @@ set -x LESS '-R -n -X -m -i -S'
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
 
-set -U __done_exclude '(?!git (?!push|pull)|sudoedit|emacsclient)'
+set -U __done_exclude '(git (?!push|pull|fetch)|sudoedit|emacsclient)'
 
 if type -q sccache
     set -x RUSTC_WRAPPER sccache
