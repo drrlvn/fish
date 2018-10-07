@@ -1,2 +1,3 @@
 fishd.*
 conf.d/custom.fish
+functions/fisher.fish
