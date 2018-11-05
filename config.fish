@@ -26,17 +26,21 @@ if type -q sccache
     set -x RUSTC_WRAPPER sccache
 end
 
-if type -q fzf
-    set -x FZF_TMUX 1
-    if type -q fd
-        set -x FZF_DEFAULT_COMMAND 'fd -t f'
-        set -x FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND . \$dir"
-        set -x FZF_ALT_C_COMMAND "fd -t d . \$dir"
-    end
-    if type -q bat
-        set -x FZF_CTRL_T_OPTS '--preview \'bat --color always {}\''
-    end
-    if type -q exa
-        set -x FZF_ALT_C_OPTS '--preview \'exa --tree --group-directories-first -s extension --color always -F -L 2 {} | head -n 100\''
-    end
+set -U FZF_LEGACY_KEYBINDINGS 0
+
+if type -q fd
+    set -U FZF_FIND_FILE_COMMAND "fd -t f"
+    set -U FZF_CD_COMMAND "fd -t d"
+    set -U FZF_CD_WITH_HIDDEN_COMMAND "fd -H -t d"
+    set -U FZF_OPEN_COMMAND "fd -H -t f"
 end
+
+if type -q bat
+    set -U FZF_PREVIEW_FILE_CMD 'bat --color always'
+end
+
+if type -q exa
+    set -U FZF_PREVIEW_DIR_CMD 'exa --tree --group-directories-first -s extension --color always -F -L 2'
+end
+
+set -U FZF_ENABLE_OPEN_PREVIEW 1
