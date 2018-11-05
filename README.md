@@ -14,6 +14,3 @@ using your system's package manager.
 * [fd](https://github.com/sharkdp/fd)
 * [fzf](https://github.com/junegunn/fzf)
 * [ripgrep](https://github.com/BurntSushi/ripgrep)
-
-If you install fzf using Homebrew then you should to run `/usr/local/opt/fzf/install` in order
-to set up the key bindings.
