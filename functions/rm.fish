@@ -1,3 +1,3 @@
 function rm -w rm
-    command rm -Iv --one-file-system $argv
+    command rm -Iv $argv
 end
