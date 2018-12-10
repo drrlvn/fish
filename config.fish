@@ -22,10 +22,6 @@ set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
 
 set -U __done_exclude '(git (?!push|pull|fetch)|sudoedit|emacsclient)'
 
-if type -q sccache
-    set -x RUSTC_WRAPPER sccache
-end
-
 set -U FZF_LEGACY_KEYBINDINGS 0
 
 if type -q fd
