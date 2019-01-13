@@ -39,4 +39,5 @@ if type -q exa
     set -U FZF_PREVIEW_DIR_CMD 'exa --tree --group-directories-first -s extension --color always -F -L 2'
 end
 
+set -U FZF_TMUX 1
 set -U FZF_ENABLE_OPEN_PREVIEW 1
