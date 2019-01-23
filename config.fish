@@ -23,6 +23,8 @@ set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
 set -U __done_exclude '(git (?!push|pull|fetch)|sudoedit|emacsclient)'
 
 set -U FZF_LEGACY_KEYBINDINGS 0
+set -U FZF_COMPLETE 1
+set -U FZF_TMUX 1
 
 if type -q fd
     set -U FZF_FIND_FILE_COMMAND "fd -t f"
@@ -39,5 +41,4 @@ if type -q exa
     set -U FZF_PREVIEW_DIR_CMD 'exa --tree --group-directories-first -s extension --color always -F -L 2'
 end
 
-set -U FZF_TMUX 1
 set -U FZF_ENABLE_OPEN_PREVIEW 1
