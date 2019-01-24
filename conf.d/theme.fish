@@ -1,4 +1,4 @@
-set -U fish_color_autosuggestion 969896
+set -U fish_color_autosuggestion normal
 set -U fish_color_cancel -r
 set -U fish_color_command magenta
 set -U fish_color_comment bryellow
@@ -15,15 +15,15 @@ set -U fish_color_operator bryellow
 set -U fish_color_param brblue
 set -U fish_color_quote brgreen
 set -U fish_color_redirection cyan
-set -U fish_color_search_match 'bryellow'  '--background=brblack'
-set -U fish_color_selection 'white'  '--bold'  '--background=brblack'
+set -U fish_color_search_match 'normal'  '--background=brwhite'
+set -U fish_color_selection 'normal'  '--bold'  '--background=brblack'
 set -U fish_color_status red
 set -U fish_color_user brgreen
 set -U fish_color_valid_path --underline
 set -U fish_pager_color_completion
 set -U fish_pager_color_description 'B3A06D'  'yellow'
-set -U fish_pager_color_prefix 'white'  '--bold'  '--underline'
-set -U fish_pager_color_progress 'brwhite'  '--background=cyan'
+set -U fish_pager_color_prefix 'normal'  '--bold'  '--underline'
+set -U fish_pager_color_progress 'brnormal'  '--background=cyan'
 
 # Enable colors for man pages, adapted from /etc/profile.d/less_termcap.sh
 set -x LESS_TERMCAP_mb \e'[01;31m'       # begin blinking

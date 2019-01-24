@@ -1,5 +1,5 @@
 set -g __fish_git_prompt_show_informative_status
-set -g __fish_git_prompt_color_branch -o white
+set -g __fish_git_prompt_color_branch -o normal
 set -g __fish_git_prompt_color_upstream_ahead -o green
 set -g __fish_git_prompt_color_upstream_behind -o red
 set -g __fish_git_prompt_color_upstream -o yellow

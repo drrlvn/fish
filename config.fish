@@ -22,6 +22,7 @@ set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
 
 set -U __done_exclude '(git (?!push|pull|fetch)|sudoedit|emacsclient)'
 
+set -U FZF_DEFAULT_OPTS "--color light"
 set -U FZF_LEGACY_KEYBINDINGS 0
 set -U FZF_TMUX 1
 
@@ -33,6 +34,7 @@ if type -q fd
 end
 
 if type -q bat
+    set -x BAT_THEME 'Monokai Extended Light'
     set -U FZF_PREVIEW_FILE_CMD 'bat --color always'
 end
 
