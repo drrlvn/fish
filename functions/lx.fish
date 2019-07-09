@@ -1,3 +1,3 @@
-function lx -w exa
-    exa --group-directories-first --git -s extension -lFg $argv
+function lx -w lsd
+    lsd --group-dirs first -lF $argv
 end
