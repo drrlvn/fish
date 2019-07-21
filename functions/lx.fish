@@ -1,3 +1,3 @@
 function lx -w exa
-    exa --group-directories-first --git -s extension -lFg $argv
+    exa -lFg --group-directories-first --git -s extension --icons $argv
 end
