@@ -6,5 +6,5 @@ end
 
 if type -q emacsclient
     set -x ALTERNATE_EDITOR $EDITOR
-    set -x EDITOR 'emacsclient -c'
+    set -x EDITOR 'emacsclient'
 end
