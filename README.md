@@ -2,7 +2,13 @@
 
 ![Screenshot](screenshot.png)
 
-Clone this repo to `~/.config`.
+## Installation
+
+1. Clone this repo to `~/.config`
+1. Install `starship`:
+   * On Arch Linux: `yay -S starship-bin`
+   * Using Cargo: `cargo install starship`
+1. Optionally use `starship` configuration: `ln -s ~/.config/fish/starship.toml ~/.config/`
 
 ## External Tools
 
