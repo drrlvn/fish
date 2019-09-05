@@ -15,6 +15,7 @@ function fish_greeting
 end
 
 set -g fish_term24bit 1
+set -gx STARSHIP_SHELL fish
 
 set -x LESS '-R -n -X -m -i -S'
 set -x VIRTUAL_ENV_DISABLE_PROMPT 1
