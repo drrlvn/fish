@@ -36,6 +36,7 @@ end
 
 if type -q bat
     set -x BAT_THEME 'GitHub'
+    set -x BAT_STYLE 'changes'
     set -U FZF_PREVIEW_FILE_CMD 'bat --color always'
 end
 
