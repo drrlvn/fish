@@ -35,7 +35,7 @@ if type -q fd
 end
 
 if type -q bat
-    set -x BAT_THEME 'Monokai Extended Light'
+    set -x BAT_THEME 'GitHub'
     set -U FZF_PREVIEW_FILE_CMD 'bat --color always'
 end
 
