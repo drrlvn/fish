@@ -9,6 +9,12 @@ function activate --argument-names 'venv'
         return
     end
 
+    set poetry (poetry env info --path ^/dev/null)
+    if test -n "$poetry"
+        source $poetry/bin/activate.fish
+        return
+    end
+
     set pipenv (env PIPENV_IGNORE_VIRTUALENVS=1 pipenv --venv ^/dev/null)
     if test -n "$pipenv"
         source $pipenv/bin/activate.fish
