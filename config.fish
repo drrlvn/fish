@@ -35,7 +35,7 @@ if type -q fd
 end
 
 if type -q bat
-    set -q BAT_THEME; or set -x BAT_THEME 'OneHalfLight'
+    set -q BAT_THEME; or set -x BAT_THEME 'OneHalfDark'
     set -q BAT_STYLE; or set -x BAT_STYLE 'plain'
     set -U FZF_PREVIEW_FILE_CMD 'bat --color always'
 end

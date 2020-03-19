@@ -1,10 +1,10 @@
 set -U fish_color_autosuggestion normal
 set -U fish_color_cancel -r
-set -U fish_color_command magenta
+set -U fish_color_command blue
 set -U fish_color_comment yellow
 set -U fish_color_cwd green
 set -U fish_color_cwd_root red
-set -U fish_color_end magenta
+set -U fish_color_end blue
 set -U fish_color_error red
 set -U fish_color_escape 'yellow'  '--bold'
 set -U fish_color_history_current --bold
@@ -12,7 +12,7 @@ set -U fish_color_host normal
 set -U fish_color_match --background=blue
 set -U fish_color_normal normal
 set -U fish_color_operator yellow
-set -U fish_color_param blue
+set -U fish_color_param 'blue'  '--bold'
 set -U fish_color_quote green
 set -U fish_color_redirection cyan
 set -U fish_color_search_match 'normal'  '--background=white'
