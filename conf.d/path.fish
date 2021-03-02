@@ -1,3 +1,7 @@
-for path in /usr/local/opt/python/libexec/bin /usr/local/opt/coreutils/libexec/gnubin /usr/local/opt/curl-openssl/bin ~/.cargo/bin ~/.yarn/bin ~/.emacs.d/bin ~/.local/bin
-    test -d "$path"; and set -x PATH "$path" $PATH
-end
+fish_add_path /usr/local/opt/python/libexec/bin
+fish_add_path /usr/local/opt/coreutils/libexec/gnubin
+fish_add_path /usr/local/opt/curl-openssl/bin
+fish_add_path ~/.cargo/bin
+fish_add_path ~/.yarn/bin
+fish_add_path ~/.emacs.d/bin
+fish_add_path ~/.local/bin
