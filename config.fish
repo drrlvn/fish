@@ -1,14 +1,4 @@
 function fish_greeting
-    if type -q systemctl
-        set failed (systemctl list-units --state=failed --no-legend ^ /dev/null)
-        if not set -q $failed
-            echo Failed Units: (set_color brred)(count $failed)(set_color normal)
-            for unit in $failed
-                echo '  '(string split -m 1 ' ' -- $unit)[1]
-            end
-        end
-    end
-
     if type -q custom_fish_greeting
         custom_fish_greeting
     end
