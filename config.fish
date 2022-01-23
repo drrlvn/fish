@@ -34,4 +34,4 @@ end
 
 set -U FZF_ENABLE_OPEN_PREVIEW 1
 
-source (/usr/bin/starship init fish --print-full-init | psub)
+source (starship init fish --print-full-init | psub)
