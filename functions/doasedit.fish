@@ -1,3 +1,3 @@
-function doasedit -w rnano -d "Edit file as root"
-    doas rnano $argv
+function doasedit -w micro -d "Edit file as root"
+    doas micro $argv
 end
