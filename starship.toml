@@ -1,5 +1,8 @@
 [directory]
 fish_style_pwd_dir_length = 1
 
-[localip]
-disabled = true
+[cmd_duration]
+show_milliseconds = true
+
+[sudo]
+disabled = false

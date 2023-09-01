@@ -6,7 +6,8 @@
 
 1. Clone this repo to `~/.config`
 1. Install `starship`:
-   * On Arch Linux: `yay -S starship-bin`
+   * On Arch Linux: `pacman -S starship`
+   * With homebrew: `brew install starship`
    * Using Cargo: `cargo install starship`
 1. Optionally use `starship` configuration: `ln -s ~/.config/fish/starship.toml ~/.config/`
 
@@ -15,8 +16,8 @@
 This configuration uses the following external tools. It is highly recommended that you install them
 using your system's package manager.
 
-* [bat](https://github.com/sharkdp/bat)
-* [exa](https://github.com/ogham/exa)
-* [fd](https://github.com/sharkdp/fd)
-* [fzf](https://github.com/junegunn/fzf)
-* [ripgrep](https://github.com/BurntSushi/ripgrep)
+* [`bat`](https://github.com/sharkdp/bat)
+* [`exa`](https://github.com/ogham/exa)
+* [`fd`](https://github.com/sharkdp/fd)
+* [`fzf`](https://github.com/junegunn/fzf)
+* [`ripgrep`](https://github.com/BurntSushi/ripgrep)

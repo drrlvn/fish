@@ -7,31 +7,16 @@ end
 set -g fish_term24bit 1
 
 set -x LESS '-R -n -X -m -i -S'
-set -x VIRTUAL_ENV_DISABLE_PROMPT 1
 set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgreprc
 
-set -U __done_exclude '(git (?!push|pull|fetch)|sudoedit|emacsclient)'
-
-set -U FZF_LEGACY_KEYBINDINGS 0
-set -U FZF_TMUX 1
-
-if type -q fd
-    set -U FZF_FIND_FILE_COMMAND "fd -t f"
-    set -U FZF_CD_COMMAND "fd -t d"
-    set -U FZF_CD_WITH_HIDDEN_COMMAND "fd -H -t d"
-    set -U FZF_OPEN_COMMAND "fd -H -t f"
+if type -q brew
+    set -x HOMEBREW_NO_ENV_HINTS 1
 end
 
 if type -q bat
-    set -q BAT_THEME; or set -x BAT_THEME 'OneHalfDark'
-    set -q BAT_STYLE; or set -x BAT_STYLE 'plain'
-    set -U FZF_PREVIEW_FILE_CMD 'bat --color always'
+    set -x BAT_THEME 'OneHalfDark'
+    set -x BAT_STYLE 'plain'
+    set -x MANPAGER "sh -c 'col -bx | bat -l man -p --paging always'"
 end
-
-if type -q exa
-    set -U FZF_PREVIEW_DIR_CMD 'exa --tree --group-directories-first -s extension --color always -F -L 2'
-end
-
-set -U FZF_ENABLE_OPEN_PREVIEW 1
 
 source (starship init fish --print-full-init | psub)
