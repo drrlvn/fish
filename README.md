@@ -17,7 +17,7 @@ This configuration uses the following external tools. It is highly recommended t
 using your system's package manager.
 
 * [`bat`](https://github.com/sharkdp/bat)
-* [`exa`](https://github.com/ogham/exa)
+* [`eza`](https://github.com/eza-community/eza)
 * [`fd`](https://github.com/sharkdp/fd)
 * [`fzf`](https://github.com/junegunn/fzf)
 * [`ripgrep`](https://github.com/BurntSushi/ripgrep)
