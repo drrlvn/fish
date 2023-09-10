@@ -17,6 +17,7 @@ if type -q bat
     set -x BAT_THEME 'OneHalfDark'
     set -x BAT_STYLE 'plain'
     set -x MANPAGER "sh -c 'col -bx | bat -l man -p --paging always'"
+    set -x MANROFFOPT "-c"
 end
 
 source (starship init fish --print-full-init | psub)
