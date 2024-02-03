@@ -1,3 +1,3 @@
 function ls -w eza
-    eza -lFg --group-directories-first --git -s extension $argv
+    eza -lg -F auto --group-directories-first --git -s extension $argv
 end
