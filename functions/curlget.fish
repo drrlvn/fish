@@ -1,3 +1,3 @@
-function curlget -w ssh -d 'cURL with wget-like default'
-    curl -fSLO --retry 3 --progress-bar $argv
+function curlget -w curl -d 'cURL with wget-like defaults'
+    curl --location --remote-name --remote-time --fail --retry 10 --retry-max-time 10 --continue-at - --progress-bar $argv
 end
