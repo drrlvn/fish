@@ -14,10 +14,14 @@ if type -q brew
 end
 
 if type -q bat
-    set -x BAT_THEME 'OneHalfDark'
-    set -x BAT_STYLE 'plain'
+    set -x BAT_THEME OneHalfDark
+    set -x BAT_STYLE plain
     set -x MANPAGER "sh -c 'col -bx | bat -l man -p --paging always'"
-    set -x MANROFFOPT "-c"
+    set -x MANROFFOPT -c
+end
+
+if not type -q hx; and type -q helix
+    alias hx=helix
 end
 
 source (starship init fish --print-full-init | psub)
